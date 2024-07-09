@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_keyboard</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .line1{
+            border: 2px solid;
+            border-radius: 10px;
+            width: 1200px;
+            height: 590px;
+            gap: 3px;
+            margin-left: 30px;
+            margin-top: 20px;
+            align-content: center;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+        .key1{
+           
+            width: 1200px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            
+        }
+        .main{
+            border: 2px solid;
+            width: 73px;
+            height: 28px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .key2{
+            width: 1200px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            padding-top: 8px;  
+        }
+        .key3{
+            width: 1200px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            padding-top: 8px;
+            
+        }
+        .key4{
+            position: relative;
+            top:-45px ;
+             /* border: 2px solid;  */
+            width: 1132px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            /* padding-top: 8px; */
+        }
+        .key5{
+            position: relative;
+            /* border: 2px solid; */
+            width: 1200px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            top: -38px;
+        }
+        .key6{
+            position: relative;
+             /* border: 2px solid;  */
+            width: 740px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            top: -81px; 
+        }
+        .key7{
+            position: relative;
+              /* border: 2px solid;     */
+            width: 200px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            top: -135px; 
+            left: 931px;
+        }
+        .key8{
+           position: relative;
+                /* border: 2px solid;       */
+            width: 60px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            top: -176px; 
+            left: 807px;
+        }
+        .key9{
+            position: relative;
+               /* border: 2px solid;      */
+            width: 180px;
+            display: flex;
+            gap: 3px;
+            align-content: center;
+            top: -175px; 
+            left: 745px;
+        }
+        .key10{
+            position: relative;
+               /* border: 2px solid;       */
+            width: 500px;
+            display: flex;
+            align-content: center;
+            top: -153px; 
+            left: 270px; 
+        }
+        .row1{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .row2{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px;
+        }
+        .row3{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+            margin-left: 2.2px;
+        }
+        .row4{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px;
+        }
+        .row5{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px; 
+        }
+        .row6{
+            border: 2px solid;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px; 
+        }
+        .row7{
+            border: 2px solid;
+            width: 52px;
+            height: 20px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px; 
+        }
+        .row8{
+            border: 2px solid;
+            width: 60px;
+            height: 20px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2px;  
+        }
+        .row9{
+            border: 2px solid;
+            width: 420px;
+            height: 260px;
+            border-radius: 5px;
+            color: rgb(26, 208, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+        }
+        .line1:hover {
+            background-color: black;
+        }
+        .main:hover{
+            background-color: white;
+            color: black;
+        }
+        .row1:hover{
+            background-color: white;
+            color: black;
+        }
+        .row2:hover{
+            background-color: white;
+            color: black;
+        }
+        .row3:hover{
+            background-color: white;
+            color: black;
+        }
+        .row4:hover{
+            background-color: white;
+            color: black;
+        }
+        .row5:hover{
+            background-color: white;
+            color: black;
+        }
+        .row6:hover{
+            background-color: white;
+            color: black;
+        }
+        .row7:hover{
+            background-color: white;
+            color: black;
+        }
+        .row8:hover{
+            background-color: white;
+            color: black;
+        }
+        .row9:hover{
+            background-color: white;
+            color: black;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="line1">
+    <div class="key1">
+        <div class="main main1">ESC</div>
+        <div class="main main2">F1</div>
+        <div class="main main3">F2</div>
+        <div class="main main4">F3</div>
+        <div class="main main5">F4</div>
+        <div class="main main6">F5</div>
+        <div class="main main7">F6</div>
+        <div class="main main8">F7</div>
+        <div class="main main9">F8</div>
+        <div class="main main10">F9</div>
+        <div class="main main11">F10</div>
+        <div class="main main12">F11</div>
+        <div class="main main13">F12</div>
+        <div class="main main14"><ion-icon name="power-outline"></ion-icon></div>
+        <div class="main main15" style="font-size: 12px;">DELETE</div>
+        <div class="main main16"><ion-icon name="calendar-number-outline"></ion-icon></div>
+        <div class="main main17"> <ion-icon name="calculator-outline"></ion-icon></div>
+        <div class="main main18"style="font-size: 12px;">INSERT</div>
+        <div class="main main19"style="font-size: 12px;">PRT SC</div>
+    </div>
+    <div class="key2">
+        <div class="row1 main20" style="width: 38px;">~ <br>`</div>
+        <div class="row1 main21">! <br>1</div>
+        <div class="row1 main22">@ <br>2</div>
+        <div class="row1 main23"># <br>3</div>
+        <div class="row1 main24">$ <br>4</div>
+        <div class="row1 main25">% <br>5</div>
+        <div class="row1 main26">^ <br>6</div>
+        <div class="row1 main27">& <br>7</div>
+        <div class="row1 main28">* <br>8</div>
+        <div class="row1 main29">( <br>9</div>
+        <div class="row1 main30">) <br>0</div>
+        <div class="row1 main31">- </div>
+        <div class="row1 main32">+ <br>=</div>
+        <div class="row1 main33" style="font-size: 12px;width: 90px;">BACKSPACE</div>
+        <div class="row1 main34" style="font-size: 10px;">NUM <BR>LOCK</div>
+        <div class="row1 main35">/</div>
+        <div class="row1 main36">*</div>
+        <div class="row1 main37">-</div>
+    </div>
+    <div class="key3">
+        <div class="row2 main38" style="font-size: 12px;width: 60px;">TAB</div>
+        <div class="row2 main39">Q</div>
+        <div class="row2 main40">W</div>
+        <div class="row2 main41">E</div>
+        <div class="row2 main42">R</div>
+        <div class="row2 main43">T</div>
+        <div class="row2 main44">Y</div>
+        <div class="row2 main45">U</div>
+        <div class="row2 main46">I</div>
+        <div class="row2 main47">O</div>
+        <div class="row2 main48">P</div>
+        <div class="row2 main49">{ <br>]</div>
+        <div class="row2 main50">} <br>]</div>
+        <div class="row2 main51" style="width: 60px;">| <br>\</div>
+        <div class="row2 main52"><ion-icon name="home-outline"></ion-icon>7 </div>
+        <div class="row2 main53"><ion-icon name="caret-up-outline"></ion-icon>8</div>
+        <div class="row2 main54">9</div>
+        <div class="row2 main55" style="height: 90px;"><b>+</b></div>
+    </div>
+    <div class="key4">
+        <div class="row3 main56" style="font-size: 12px;width: 90px;">CAPS LOCK</div>
+        <div class="row3 main57">A</div>
+        <div class="row3 main58">S</div>
+        <div class="row3 main59">D</div>
+        <div class="row3 main60">F</div>
+        <div class="row3 main61">G</div>
+        <div class="row3 main62">H</div>
+        <div class="row3 main63">J</div>
+        <div class="row3 main64">K</div>
+        <div class="row3 main65">L</div>
+        <div class="row3 main65"><b>: <br>;</b></div>
+        <div class="row3 main66"><b>" <br>'</b></div>
+        <div class="row3 main67" style="width: 95px;font-size: 12PX;"><ion-icon name="return-down-back-outline"></ion-icon>ENTER</div>
+        <div class="row3 main68" ><ion-icon name="caret-back-outline"></ion-icon>4</div>
+        <div class="row3 main69">5</div>
+        <div class="row3 main70">6<ion-icon name="caret-forward-outline"></ion-icon></div>
+      
+       
+    </div>
+    <div class="key5">
+        <div class="row4 main71" style="width: 100px;font-size: 12px;">SHIFT<ion-icon name="chevron-up-outline"></ion-icon></div>
+        <div class="row4 main72">Z</div>
+        <div class="row4 main73">X</div>
+        <div class="row4 main74">C</div>
+        <div class="row4 main75">V</div>
+        <div class="row4 main76">B</div>
+        <div class="row4 main77">N</div>
+        <div class="row4 main78">M</div>
+        <div class="row4 main79"><<br>,</div>
+        <div class="row4 main80">> <br>.</div>
+        <div class="row4 main81">? <br>/</div>
+        <div class="row4 main82" style="width: 130px;font-size: 12px" ><ion-icon name="chevron-up-outline"></ion-icon>SHIFT</div>
+        <div class="row4 main83">1 <br></div>
+        <div class="row4 main84"><ion-icon name="caret-down-outline"></ion-icon>2</div>
+        <div class="row4 main85" >3</div>
+        <div class="row4 main86" style="height: 90px;"><ion-icon name="return-down-back-outline"></ion-icon>enter</div>
+    </div>
+    <div class="key6">
+        <div class="row5 main87" style="font-size: 12px;" >CTRL</div>
+        <div class="row5 main88"style="font-size: 12px;">FN</div>
+        <div class="row5 main89"><ion-icon name="logo-windows"></ion-icon></div>
+        <div class="row5 main90"style="font-size: 12px;">ALT</div>
+        <div class="row5 main91" style="width: 400px;height: 50px;font-size: 12px;">SPACE</div>
+        <div class="row5 main92"style="font-size: 12px;">ALT</div>
+        <div class="row5 main93"style="font-size: 12px;">CTRL</div>
+    </div>
+    <div class="key7">
+        <div class="row6 main94" style="width: 135px;">0 <br>ins</div>
+        <div class="row6 main95">. <br>del</div>
+    </div>
+    <div class="key8">
+        <div class="row7 main96"><ion-icon name="chevron-up-outline"></ion-icon></div>
+    </div>
+    <div class="key9">
+        <div class="row8 main97"><ion-icon name="chevron-back-outline"></ion-icon></div>
+        <div class="row8 main98"><ion-icon name="chevron-down-outline"></ion-icon></div>
+        <div class="row8 main99"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+    </div>
+    <div class="key10">
+        <div class="row9 main100"></div>
+    </div>
+</div>
+</body>
+</html>
